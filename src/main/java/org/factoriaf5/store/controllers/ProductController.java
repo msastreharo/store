@@ -12,6 +12,7 @@ import java.util.List;
 public class ProductController {
     private final List<Product> products = new ArrayList<>();
 
+
     @GetMapping("/products")
     public List<Product> allProducts() {
         return products;
@@ -22,3 +23,5 @@ public class ProductController {
         products.add(product);
     }
 }
+
+
